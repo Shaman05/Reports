@@ -33,23 +33,36 @@
     </div>-->
     <div class="content" id="content">
     	<div class="inner">
-    		<div class="left search-pannel">
+    		<div class="left search-pannel" id="left">
     			<h3>选择报表：</h3>
     			<div class="search-rows">
     				<div class="condition">
     					<dl>
-    						<dt><a href="#"><i class="icon icon-open"></i>Total Usage</a></dt>
+    						<dt><a href="javascript:"><i class="icon icon-open"></i>Total Usage</a></dt>
     						<dd>
     							<div class="cdt-cont">
-    								<a href="#">Total usage one year line trend</a>
+    								<a href="#">total usage one year line trend</a>
     							</div>
     						</dd>
     					</dl>
     				</div>
+                    <div class="condition">
+                        <dl>
+                            <dt><a href="javascript:"><i class="icon icon-open"></i>Usage by top X content type</a></dt>
+                            <dd>
+                                <div class="cdt-cont">
+                                    <a href="#">top 30 bar</a>
+                                </div>
+                                <div class="cdt-cont">
+                                    <a href="#">13-month 1 year bar-trend</a>
+                                </div>
+                            </dd>
+                        </dl>
+                    </div>
     			</div>
     		</div>
     		<div class="main">
-                
+                <iframe src="http://www.baidu.com" height="100%" width="100%"></iframe>
             </div>
     	</div>
     </div>

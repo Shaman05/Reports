@@ -165,13 +165,14 @@ body{
 }
 .search-rows{
     border-top: 1px solid #ffffff;
-    padding: 10px 12px;
+    padding: 10px 12px 5px;
     color: #575756;
 }
 .condition{
     border: 1px solid #e6e6e6;
     border-radius: 2px;
     background: #ffffff;
+    margin-bottom: 5px;
 }
 .condition dl dt{
     height: 28px;
@@ -179,12 +180,12 @@ body{
     line-height: 28px;
 }
 .condition dl dt a{
-    color: #00a4d8;
-    background: url(../images/icon-jqui.png) no-repeat -132px -35px;
+    color: #000000;
 }
 .condition dl dd{
     border-top: 1px solid #dfdfdf;
     padding: 2px 10px;
+    display: none; 
 }
 .cdt-cont{
     line-height: 22px;
@@ -247,5 +248,8 @@ body{
     background-repeat: no-repeat; 
 }
 .icon-open{
-    background-position: -132px -35px;
+    background-position: -19px -131px;
+}
+.icon-close{
+    background-position: -51px -131px;
 }

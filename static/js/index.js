@@ -12,7 +12,8 @@ define(function(require, exports, module){
     //selector cache
     var topBar = $("#top-bar"),
         content = $("#content"),
-        footer = $("#footer");
+        footer = $("#footer"),
+        left = $("#left");
 
     module.exports = {
         init : function(){
@@ -25,13 +26,20 @@ define(function(require, exports, module){
                 console.log("index page!");
             },
             layOutInit : function(){
-                var rh = util.clientView.height - topBar.outerHeight() - footer.outerHeight();
+                var rh = util.getClientView().height - topBar.outerHeight() - footer.outerHeight();
                 var setHeigh = rh > 200 ? rh : 200;
                 content.css("height", setHeigh);
             }
         },
         event : function(){
             var _this = this;
+            $(window).on("resize", function(){
+                _this.pageUi.layOutInit();
+            });
+            $(".condition dt", left).find("a").on("click", function(){
+                $(this).find("i").toggleClass("icon-close");
+                $(this).parent().siblings("dd").toggle();
+            });
         }
     }
 });

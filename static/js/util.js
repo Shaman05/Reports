@@ -7,12 +7,14 @@
  */
 
 define(function(require, exports, module){
-    var isCompatMode = document.compatMode == "BackCompat" ? true : false;
+    var clientObj = document.compatMode == "BackCompat" ? document.body : document.documentElement;
 
     module.exports = {
-        clientView : {
-            width : isCompatMode ? document.body.clientWidth : document.documentElement.clientWidth,
-            height : isCompatMode ? document.body.clientHeight : document.documentElement.clientHeight
+        getClientView : function(){
+            return {
+                width : clientObj.clientWidth,
+                height : clientObj.clientHeight
+            };
         }
     }
 });
